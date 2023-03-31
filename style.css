@@ -1,0 +1,76 @@
+/* RESET GLOBAL + FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+}
+
+nav img {
+    margin-left: 2em;
+}
+
+nav div {
+    display: flex;
+}
+
+nav div span {
+    margin-right: 2em;
+}
+
+/* CONTAINER GENERAL RULES */
+div.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 40vh;
+    width: 40%;
+}
+
+section#top_section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#top_section div.container {}
+
+section#top_section img {
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+
+section#top_section div.container input:first-child {
+    width: 60%;
+    height: 3em;
+}
+
+section#top_section div.container input:last-child {
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 35%;
+    height: 3em;
+}
