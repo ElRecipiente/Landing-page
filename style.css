@@ -16,7 +16,11 @@ body {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* NAVIGATION */
@@ -44,7 +48,8 @@ div.container {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 40%;
+    width: 45%;
+    gap: 2em;
 }
 
 section {
@@ -52,15 +57,15 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10% 5%;
+    padding: 5% 5%;
 }
 
 section img {
-    width: 50%;
+    width: 40%;
 }
 
 input:first-child {
-    width: 60%;
+    width: 50%;
     height: 3em;
     text-align: center;
 }
@@ -68,19 +73,107 @@ input:first-child {
 input:last-child {
     margin-top: 1em;
     margin-left: 1em;
-    width: 35%;
+    width: 30%;
     height: 3em;
+    border: none;
+    background-color: rgba(82, 177, 255, 0.788);
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.267);
+    border-radius: 0.2em;
+    cursor: pointer;
 }
 
 section#middle_section {
-    background: rgb(248, 248, 254);
-    background: linear-gradient(0deg, rgba(248, 248, 254, 1) 0%, rgba(248, 248, 254, 1) 53%, rgba(255, 255, 255, 1) 53%);
     background-image: url(images/bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+section#middle_section a {
+    display: flex;
+    align-items: center;
+    color: #3DA08F;
+    width: fit-content;
+    border-bottom: 1px solid #3DA08F;
+}
+
+a img {
+    width: 10%;
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    width: 70%;
+    background: white;
+    box-shadow: 0 0 12px rgb(226, 226, 226);
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 2em;
+}
+
+article img {
+    width: 5%;
+}
+
+article>div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+article div img {
+    width: 15%;
+    border-radius: 50%;
+}
+
 section#bottom_section {
-    background: rgb(58, 27, 146);
+    background: rgba(44, 30, 80, 0.747);
     color: white;
+}
+
+section#bottom_section form {
+    display: flex;
+    flex-flow: column;
+}
+
+section#bottom_section input {
+    margin-left: 0;
+}
+
+footer {
+    background: rgba(5, 0, 46, 0.959);
+    color: white;
+    padding: 5%;
+}
+
+footer>div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer a,
+footer p {
+    padding: 0.5em 0;
+}
+
+footer a {
+    display: block;
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(82, 177, 255, 0.788);
+}
+
+footer #icon_link a {
+    display: inline;
+    padding: 0.2em;
+}
+
+footer div div a img {
+    width: 24px;
+    height: 24px;
 }
