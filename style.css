@@ -53,11 +53,10 @@ div.container {
 }
 
 section {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5%;
+    padding: 5%;
 }
 
 section img {
@@ -176,4 +175,84 @@ footer #icon_link a {
 footer div div a img {
     width: 24px;
     height: 24px;
+}
+
+@media screen and (width=375px) {
+
+    * {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+
+    nav img {
+        margin-left: 1em;
+        width: 20%;
+    }
+
+    nav div span {
+        margin-right: 2em;
+    }
+
+    div.container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 1em;
+    }
+
+    section {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    section#top_section>div,
+    section#middle_section>div {
+        order: 2;
+    }
+
+    section#top_section>img,
+    section#middle_section>img {
+        width: 100%;
+        order: 1;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input:first-child,
+    input:last-child {
+        width: 100%;
+        padding: 0;
+        margin: 0.5em 0;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article>img {
+        width: 10%;
+    }
+
+    footer {
+        text-align: start;
+    }
+
+    footer>div {
+        flex-flow: column;
+    }
+
+    footer>div a,
+    footer>div p {
+        text-align: left;
+    }
 }
